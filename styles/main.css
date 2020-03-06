@@ -1,3 +1,8 @@
+/* DEBUG:  */
+.fake {
+  background: orange;
+}
+
 /* GENERAL STYLES */
 * {
   margin: 0;
@@ -202,4 +207,9 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 380px;
+}
+
+/* SMART MOBILITY PART */
+#smart-mobility {
+  background-image: url('../img/scooter-bg.jpg')
 }
