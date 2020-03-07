@@ -356,7 +356,7 @@ h4 {
 /* BIG BANNER */
 #big-banner {
   position: relative;
-  margin-top: 32px;
+  margin: 32px 0;
   height: 400px;
   background-image: url('../img/social-banner.jpg');
   background-size: cover;
@@ -380,7 +380,7 @@ h4 {
 /* FOOTER */
 footer {
   background: black;
-  padding-top: 40px;
+  padding-top: 60px;
   color: #fff;
 }
 
@@ -405,7 +405,7 @@ footer {
   font-size: 15px;
 }
 
-/* social row */
+/* footer: FOOT-SOCIAL-ROW */
 #foot-social-row {
   width: 900px;
   max-width: 80%;
@@ -431,6 +431,7 @@ footer {
   padding-top: 5px;
 }
 
+/* footer: FOOTER-APP*/
 #footer-app {
   text-align: center;
   padding-bottom: 20px;
