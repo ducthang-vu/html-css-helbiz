@@ -16,6 +16,25 @@ a {
   color: inherit;
 }
 
+h1 {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+
+h2 {
+  font-size: 38px;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 16px;
+}
+
 /* UTILITIES */
 .container {
   width: 1350px;
@@ -120,15 +139,9 @@ a {
   text-align: center;
 }
 
-#jumbotron h1 {
-  font-weight: 600;
-  font-size: 48px;
-}
-
-#jumbotron h3 {
+#jumbotron h4 {
   font-weight: 400;
   padding: 25px 0 18px;
-  font-size: 16px;
 }
 
 
@@ -162,11 +175,9 @@ a {
 
 #products .box h2 {
   margin-bottom: 21px;
-  font-size: 38px;
 }
 #products .box h4 {
   margin-bottom: 24px;
-  font-size: 18px;
 }
 
 #products .box img {
@@ -201,8 +212,6 @@ a {
 }
 
 #how-works .col-sx h3 {
-  font-weight: 600;
-  font-size: 30px;
   width: 190px;
   display: inline-block;
   text-align: left;
@@ -244,7 +253,6 @@ a {
   margin-top: 120px;
   width: 400px;
   font-weight: 600;
-  font-size: 38px;
 }
 
 #smart-mobility .col-dx h4 {
@@ -320,14 +328,12 @@ a {
 
 #get-find-row h2 {
   font-weight: 600;
-  font-size: 38px;
 }
 
 #get-find-row h4 {
   margin-top: 15px;
   margin-bottom: 15px;
   font-weight: 400;
-  font-size: 18px;
 }
 
 #get-find-row .cta {
@@ -382,7 +388,6 @@ footer {
 
 /* main-footer */
 #main-footer h4 {
-  font-size: 18px;
   padding-bottom: 15px;
 }
 
@@ -393,7 +398,7 @@ footer {
 
 #main-footer a {
   color: grey;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 /* social row */
