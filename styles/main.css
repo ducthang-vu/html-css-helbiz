@@ -139,6 +139,10 @@ h4 {
   text-align: center;
 }
 
+#jumbotron .wrapper {
+  width: 700px;
+}
+
 #jumbotron h4 {
   font-weight: 400;
   padding: 25px 0 18px;
@@ -170,7 +174,7 @@ h4 {
 }
 #products .box h2,
 #products .box h4 {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #products .box h2 {
