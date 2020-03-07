@@ -1,8 +1,3 @@
-/* DEBUG:  */
-.fake {
-  background: orange;
-}
-
 /* GENERAL STYLES */
 * {
   margin: 0;
@@ -16,6 +11,10 @@ body {
   color: #000;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 /* UTILITIES */
 .container {
@@ -33,6 +32,10 @@ body {
 .float {
   float: left;
   padding: 0 16px;
+}
+
+.w-25 {
+  width: 25%;
 }
 
 .w-30 {
@@ -65,7 +68,11 @@ body {
 
 /* HEADER */
 .main-header {
-  background: lightblue;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  z-index: 1;
 }
 
 .navbar {
@@ -92,7 +99,6 @@ body {
 
 .menu-nav li a {
   padding: 0 10px;
-  text-decoration: none;
   text-transform: uppercase;
   color: #000;
 }
@@ -105,6 +111,7 @@ body {
 
 /* JUMBOTRON */
 #jumbotron {
+  margin-top: 80px;
   height: 550px;
   background-image: url('../img/hero-bg.jpg');
   background-size: cover;
@@ -211,5 +218,215 @@ body {
 
 /* SMART MOBILITY PART */
 #smart-mobility {
-  background-image: url('../img/scooter-bg.jpg')
+  margin-bottom: 15px;
+  background-image: url('../img/scooter-bg.jpg');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 1400px;
+  height: 450px;
+  max-width: 95%;
+  text-align: center;
+  padding: 10px;
+}
+
+#smart-mobility .col-dx {
+  margin-left: 50%;
+  color: #fff;
+}
+
+#smart-mobility .col-dx h2,
+#smart-mobility .col-dx h4 {
+  margin: auto;
+}
+
+#smart-mobility .col-dx h2 {
+  margin-top: 120px;
+  width: 400px;
+  font-weight: 600;
+  font-size: 38px;
+}
+
+#smart-mobility .col-dx h4 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 380px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+
+#smart-mobility .cta {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+}
+
+#smart-mobility a::after {
+  content: '\003e';
+  display: inline-block;
+  margin-left: 10px;
+}
+
+
+/* GET-FIND-ROW */
+#get-find-row {
+  margin-bottom: 50px;
+  width: 1400px;
+  max-width: 95%;
+  margin: auto;
+  color: #fff;
+}
+
+#get-find-row .col-sx {
+  padding: 0 16px 0 0;
+}
+
+#get-find-row .col-dx {
+  padding: 0 0 0 16px;
+}
+
+#get-find-row .box {
+  height: 370px;
+  text-align: center;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+#get-find-row .col-sx .box {
+  position: relative;
+  background: linear-gradient(#41566a,#252f38);
+}
+
+#get-find-row .col-sx .box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 85%;
+  background-image: url('../img/helbiz-app.png');
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+
+#get-find-row .col-dx .box{
+  background-image: url('../img/cities.jpg');
+  background-size: cover;
+}
+
+#get-find-row h2 {
+  font-weight: 600;
+  font-size: 38px;
+}
+
+#get-find-row h4 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#get-find-row .cta {
+  padding: 15px 5px;;
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+}
+
+#get-find-row a::after {
+  content: '\003e';
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* BIG BANNER */
+#big-banner {
+  position: relative;
+  margin-top: 32px;
+  height: 400px;
+  background-image: url('../img/social-banner.jpg');
+  background-size: cover;
+}
+
+#big-banner .position-center {
+  background-color: #fff;
+  padding: 65px 95px;
+}
+
+.social-row {
+  margin-top: 5px;
+  padding: 0 5px;
+  height: 25px;
+}
+
+#big-banner .social-row a:not(:last-child) {
+  padding-right: 30px;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-row {
+  width: 900px;
+  max-width: 80%;
+  padding-bottom: 25px;
+}
+
+/* main-footer */
+#main-footer h4 {
+  font-size: 18px;
+  padding-bottom: 15px;
+}
+
+#main-footer li {
+  list-style: none;
+  line-height: 200%;
+}
+
+#main-footer a {
+  color: grey;
+  font-size: 16px;
+}
+
+/* social row */
+#foot-social-row {
+  width: 900px;
+  max-width: 80%;
+  padding: 20px 0;
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  margin-bottom: 20px;
+}
+
+#foot-social-row a {
+  font-size: 12px;
+}
+
+#foot-social-row .social-row a {
+  font-size: 18px;
+}
+
+#foot-social-row .social-row a:not(:last-child) {
+  padding-right: 10px;
+}
+
+#foot-social-row .w-25:not(:first-child) {
+  padding-top: 5px;
+}
+
+#footer-app {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+#footer-app a img {
+  width: 100px;
 }
