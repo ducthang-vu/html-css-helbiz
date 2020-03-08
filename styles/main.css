@@ -21,7 +21,6 @@ h1 {
   font-size: 48px;
 }
 
-
 h2 {
   font-size: 38px;
 }
@@ -232,7 +231,8 @@ header {
   width: 380px;
 }
 
-/* SMART MOBILITY PART */
+
+/* SMART MOBILITY */
 #smart-mobility {
   margin-bottom: 15px;
   background-image: url('../img/scooter-bg.jpg');
@@ -312,7 +312,6 @@ header {
   background-repeat: no-repeat;
 }
 
-
 #get-find-row .col-dx .box{
   background-image: url('../img/cities.jpg');
   background-size: cover;
@@ -365,6 +364,7 @@ header {
 #big-banner .social-row a:not(:last-child) {
   padding-right: 30px;
 }
+
 
 /* FOOTER */
 footer {
@@ -432,8 +432,6 @@ footer {
 
 
 
-
-
 /* RESPONSIVE */
 @media screen and (min-width: 930px) {
   #smart-mobility .col-dx h2 {
@@ -452,8 +450,8 @@ footer {
   .navbar .navbar-col-left .lang-opt {
     display: none;
   }
-
 }
+
 
 
 @media screen and (min-width: 701px) and (max-width: 929px) {
