@@ -257,7 +257,9 @@ header {
   margin: auto;
 }
 
-#smart-mobility .col-dx h2 {
+/* DEBUG:  */
+
+/* #smart-mobility .col-dx h2 {
   margin-top: 120px;
   width: 400px;
   font-weight: 600;
@@ -269,7 +271,7 @@ header {
   width: 380px;
   font-weight: 400;
   font-size: 18px;
-}
+} */
 
 
 #smart-mobility .cta {
@@ -446,7 +448,27 @@ footer {
 }
 
 
+
+
+
 /* RESPONSIVE */
+@media screen and (min-width: 950px) {
+  #smart-mobility .col-dx h2 {
+    margin-top: 120px;
+    width: 400px;
+    font-weight: 600;
+  }
+  #smart-mobility .col-dx h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 380px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+
+
 @media screen and (max-width: 420px) {
   .w-sm-100 {
     width: 100%;
@@ -584,35 +606,91 @@ footer {
   /* SMART MOBILITY */
   #smart-mobility {
     height: 290px;
+    padding: 20px;
   }
 
-  #smart-mobility .col-dx {
-    position: relative;
-    margin: 0;
-    padding: 10px;
-  }
-
-  #smart-mobility .col-dx * {
-    margin: auto;
-    max-width: 90%;
-  }
-
-  #smart-mobility .col-dx *::before {
+  #smart-mobility::before {
     position: absolute;
     content: '';
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* DEBUG:  */
-    background: linear-gradient(#41566a,#252f38);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0));
   }
 
-  #smart-mobility .col-dx h2 {
-    margin-top: 40px;
+  #smart-mobility .col-dx {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
   }
 
-  #smart-mobility .cta {
+  #smart-mobility .col-dx * {
+    margin: auto;
+    max-width: 90%;
+    padding: 20px;
+  }
+
+  #smart-mobility .col-dx a.cta {
     font-size: 12px;
   }
+
+  /* GET-FIND-ROW */
+  #get-find-row .col-sx,
+  #get-find-row .col-dx {
+    padding: 0;
+  }
+
+  #get-find-row .col-sx {
+    margin-bottom: 10px;
+  }
+
+  #get-find-row .box {
+    padding: 30px 0;
+    height: 280px;
+  }
+
+  #get-find-row .col-dx .box{
+    padding-top: 50px;
+  }
+
+  /* BIG-BANNER */
+  #big-banner {
+    height: 250px;
+  }
+
+  #big-banner .position-center {
+    padding: 45px 75px;
+  }
+
+  #big-banner .social-row a:not(:last-child) {
+    padding-right: 20px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding-top: 30px;
+  }
+
+  /* Footer: MAIN FOOTER */
+  footer .w-sm-100 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  footer .w-sm-100:first-child {
+    text-align: center;
+  }
+
+  #main-footer h4 {
+    padding-bottom: 8px;
+  }
+
+  #main-footer li {
+    line-height: 180%;
+  }
+
+  /* Footer: FOOT-SOCIAL-ROW */
 }
